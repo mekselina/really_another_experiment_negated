@@ -16,7 +16,8 @@ $("document").ready(function() {
         // You have to specify all views you want to use in this experiment and the order of them
         views_seq: [
             intro,
-            legal_info,
+            legal_info_1,
+            legal_info_2,
             instructions,
             slider_rating_custom,
             post_test,
@@ -24,12 +25,12 @@ $("document").ready(function() {
         ],
         // Here, you can specify all information for the deployment
         deploy: {
-            experimentID: "52",
+            experimentID: "63",
             serverAppURL: "https://mcmpact.ikw.uni-osnabrueck.de/magpie/api/submit_experiment/",
             // Possible deployment methods are:
             // "debug" and "directLink"
             // As well as "MTurk", "MTurkSandbox" and "Prolific"
-            deployMethod: "Prolific",
+            deployMethod: "debug",
             contact_email: "vinicius.macuch.silva@uni-osnabrueck.de",
             prolificURL: "https://app.prolific.co/submissions/complete?cc=7921B401"
         },
